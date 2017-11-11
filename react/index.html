@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bootstrap中文网-react搭建</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/app.less">
+</head>
+<body>
+	<!-- 定义容器元素 -->
+	<div id="app"></div>
+	<script type="text/javascript" src="mokuai/lib/react.js"></script>
+	<script type="text/javascript" src="mokuai/lib/react-dom.js"></script>
+	<script type="text/javascript" src="sea.js"></script>
+	<script type="text/javascript">
+	seajs.config({
+		map: [
+			['.jsx', '']
+		]
+	})
+	seajs.use('mokuai/bootstrap.jsx')
+	</script>
+</body>
+</html>
